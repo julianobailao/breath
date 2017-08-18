@@ -1,0 +1,36 @@
+@require '../../node_modules/vuetify/src/stylus/settings/_colors'
+
+$theme := {
+  primary: $light-blue.base
+  accent: $light-blue.accent-2
+  secondary: $orange.base
+  info: $blue.lighten-1
+  warning: $amber.darken-2
+  error: $red.accent-4
+  success: $green.lighten-2
+}
+
+@import '../../node_modules/vuetify/src/stylus/main'
+
+.toolbar--extended
+  .toolbar__extension
+    height 139px
+
+.toolbar__extension
+  align-items flex-start
+
+  .toolbar__title
+    margin 15px 20px !important
+
+  .toolbar__extension__title, .toolbar__extension__subtitle
+    margin 0
+    padding 0
+
+  .toolbar__extension__title
+    font-size 22px
+    line-height 22px
+
+  .toolbar__extension__subtitle
+    font-size 16px
+    line-height 16px
+    margin-top 5px
